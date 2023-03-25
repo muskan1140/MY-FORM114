@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"  content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css"><html>
+        <title>
+            FORM
+        </title></head>
+    <body>
+         <form id="form" >
+            <div class="container">
+                   <div class="form-control">
+                      <u><h1 class ="main_heading">FORM DETAILS</h1></u><br>
+                     <label for="USERNAME">FIRST NAME<span class="asterisk">*</span></label>
+                     <input type="text" name="firstname" id="username" placeholder="Enter first name" >
+                     <div id="error1"></div>
+                  
+                  </div>
+                  
+                     
+             
+                   <div class="form-control">
+                     <label for="SURNAME">LAST NAME<span class="asterisk">*</span></label>
+                     <input type="text" name="surname" id="surname" placeholder="Enter last name" >
+                     <div id="error2"></div>
+                
+                    </div>  
+            
+                   <div class="form-control">
+                     <label for="EMAIL-ID">EMAIL-ID<span class="asterisk">*</span></label>
+                     <input type="Email" name="email_id" id="email_id" placeholder="Enter Email here" >
+                     <div id="error3"></div>
+                
+                    </div>
+
+
+                   <div class="form-control">
+                      <br>
+                      <label for="GENDER:">GENDER<span class="asterisk">*</span></label>
+                     <br>
+                     <!--- <input type="radio"   value="MALE" name="gender"checked><span class="gender-field">MALE</span>
+                      <input type="radio"  value="FEMALE" name="gender"><span class="gender-field">FEMALE</span>
+                   -->
+                   <label>
+                     <input type="radio" value="MALE" name="gender" checked>
+                     <span class="gender-field">MALE</span>
+                   </label>
+                   <label>
+                     <input type="radio" value="FEMALE" name="gender">
+                     <span class="gender-field">FEMALE</span>
+                   </label>
+                   
+                    </div>
+
+              
+
+              <div class="form-control">
+               <br>
+                <label for="DEGREE">DEGREE<span class="asterisk">*</span></label> 
+                    <select name="degree" id="degree">
+                       <option value="BCA">BCA</option>
+                       <option value="B.E">B.E</option>
+                       <option value="MBA">MBA</option>
+                       <option value="MCA">MCA</option>
+                    </select>   
+              </div> 
+
+
+              <div class="form-control">
+                <label type="Number">MOBILE NUMBER<span class="asterisk">*</span></label>
+                <input type="number" name="mobile" id="mobile" placeholder="XXXXXXXXXX">
+                <div id="error4"></div>
+              </div>
+
+
+
+                <div class="form-control">
+                    <label for="SELECT LANGUAGE:">SELECT LANGUAGE<span class="asterisk">*</span></label><br><br>
+                         <div class="checkbox-container">
+                            <input type="checkbox" name="language" value="English" id="option1">
+                            <label for="option1">English</label>
+
+                            <input type="checkbox" name="language"  value="Hindi"  id="option2">
+                            <label for="option2">Hindi</label>
+
+                            <input type="checkbox" name="language" value="Bengali" id="option3">
+                            <label for="option3">Bengali</label>
+
+                            <input type="checkbox" name="language" value="Punjabi" id="option4">
+                            <label for="option4">Punjabi</label>
+
+                            <input type="checkbox" name="language" value="Urdu" id="option5">
+                            <label for="option5">Urdu</label>
+
+                            <input type="checkbox" name="language" value="Marathi" id="option6">
+                            <label for="option6">Marathi</label>
+                          </div>  
+
+                </div>
+                
+
+                   <div class="form-control">
+                     <br>
+                      <label for="SELECT CITY:">SELECT CITY<span class="asterisk">*</span></label> 
+                        <select name="city" id="City">
+                           <option value="Jammu">Jammu</option>
+                           <option value="kathua">kathua</option>
+                           <option value="Mohali">Mohali</option>
+                           <option value="Delhi">Delhi</option>
+                           <option value="Mumbai">Mumbai</option>
+                           <option value="Pune">Pune</option>
+                           <option value="Bengalore">Bengalore</option>
+                           <option value="Hydrebad">Hydrebad</option>
+                           <option value="Chennai">Chennai</option>
+                        </select>   
+                  </div> 
+
+                  <br>
+                 <div class="Controls">
+                     <button type="submit" id="submit-btn" >Submit</button>
+                  </div>
+                
+         </form>
+
+
+         <div class="Controls">
+           <button type="button" id="display-btn" >Display</button>
+           <button type="button" id="clearbutton" >Clear</button>
+         </div>
+
+         
+
+         
+         <div class="data"></div>
+    </body>
+    <script src="script.js"></script>
+    <script src="error_validations.js"></script>
+</html>
